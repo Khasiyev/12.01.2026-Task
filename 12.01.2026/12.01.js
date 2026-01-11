@@ -5,12 +5,12 @@ const btnBigger = document.getElementById('btnBigger');
 
 //========== Bigger Number ==========
 btnBigger.addEventListener('click', function(){
-  const num1 = (num1.value);
-  const num2 = (num2.value);
-    if (num1 > num2) {
-        result = `${num1} is bigger than ${num2}`;
-    } else if (num2 > num1) {
-        result = `${num2} is bigger than ${num1}`;
+  const value1 = num1.value;
+  const value2 = num2.value;
+    if (value1 > value2) {
+        result = `${value1} is bigger than ${value2}`;
+    } else if (value2 > value1) {
+        result = `${value2} is bigger than ${value1}`;
     } else {
         result = `Numbers are equal`;
     }
