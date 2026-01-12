@@ -14,7 +14,7 @@ btnBigger.addEventListener('click', function(){
     } else {
         result = `Numbers are equal`;
     }
-    alert(result);
+    biggerResult.textContent = result;
 });
 
 
@@ -29,10 +29,13 @@ const discountInput = document.getElementById("discount");
 btnDiscount.addEventListener('click', function () {
     const price = parseFloat(priceInput.value);
     const discount = parseFloat(discountInput.value);
-
     const discountedPrice = price * discount / 100;
-
-    alert(`The discounted price is ${discountedPrice}`);
+if(price < 0){
+    alert("Price cannot be negative.");
+}else
+{
+    discountResult.textContent = `The discounted price is ${discountedPrice}`;
+}
 });
 
 
@@ -49,6 +52,7 @@ btnValidate.addEventListener('click', function () {
 });
 
 
+//========== Font Family Changer ==========
 const fontSelect = document.getElementById('fontSelect');
 const textBox = document.getElementById('textBox');
 
